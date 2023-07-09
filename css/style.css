@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #5171a3c4;
+	padding: 10px 40px;
+	box-shadow: 1px 2px 17px 2px #4c4b4b;
+    position: relative;
+}
+.logo{
+	font-size: 23px;
+	height: 30px;	
+}
+main{
+	background: rgb(103,167,153);
+	background: linear-gradient(174deg, rgb(197 237 228 / 54%) 15%, rgb(56 225 209 / 52%) 41%, rgb(53 218 218 / 52%) 59%, rgb(138 211 197 / 53%) 73%, rgb(64 250 215 / 53%) 100%);
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main:before{
+	content: "";
+    height: auto;
+    width: 100vw;
+    background-color: #7f7f7f;
+    opacity: 40%;
+    position: absolute;
+}
+nav{
+	margin-top: 100px;
+    height: 50px;
+    background-color: #5171a3c4;
+}
+section[class$=__section]{
+	background-color: rgb(255 255 255 / 36%);
+    width: 1000px;
+    padding: 40px 60px;
+    margin-bottom: 50px;
+}
+div[class$=__title]{
+	display: flex;
+	justify-content: space-between;
+	font-size: 36px;
+	padding: 10px;
+	text-align: left;
+}
+h1{
+	color: black;
+}
+
+.nav__menu{
+	display: flex;
+	justify-content: space-around;
+    width: 1000px;
+}
+.nav__menu li{
+	list-style: none;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 12px 40px;
+}
+.music__section{
+    text-align: right;
+}
+.music__section p{
+	font-style: italic;
+	color: black;
+	padding: 10px 7px;
+}
+.container__block__1, .container__block__2{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.film__item, .book__item{
+	position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    height: 520px;
+    background: white;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+img{
+	height: 340px;
+}
+div[class$=__item]:hover{
+	box-shadow: 0px 0px 12px #ff9d36b5;
+}
+
+.film__item h3, p{
+	font-size: 16px;
+	color: black;
+}
+.film__item h3{
+	font-size: 26px;
+    margin: 5px;
+}
+.book__item h3{
+	color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 6px;
+}
+
+.filmShow__section h2{
+	color: black;
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0px
+}
+
+.filmShowBox__section{
+    height: 470px;
+    background: white;
+    padding: 20px 20px;
+    margin: 20px 10px;
+    text-align: justify;
+     text-indent: 30px;
+}
+.filmShowBox__section p{
+	margin-bottom: 25px;
+}
+
+video{
+	float: left;
+	margin-bottom: 10px;
+    margin-right: 25px;
+}
+.film__rating, .book__rating{
+	position: absolute;
+	top: 20px;
+	right: 24px;
+	width: 50px;
+	height: 50px;
+	background: orange;
+	opacity: 0;
+	text-align: center;
+    font-size: 24px;
+    padding: 7px;
+    border: 3px double white;
+}
+.container__block__1 > .book__item >.book__rating{
+	top: 18px;
+	right: 33px;
+}
+.container__block__2 > .book__item >.book__rating{
+	top: 18px;
+	right: 20px;
+}
+button{
+	height: 37px;
+    width: 150px;
+    background: #bb3f3f;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+button:hover{
+	border: 2px double #3e0808b5;
+    box-shadow: 0px 0px 5px 0px orange;
+}
+footer{
+	width: 100vw;
+	height: 100px;
+	background-color: #5171a3c4;
+	text-align: center;
+	padding: 40px;
+	font-size: 18px;
+}
+
